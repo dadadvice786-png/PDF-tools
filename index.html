@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free PDF Tools Online – 30+ PDF Tools for All Your Needs</title>
+<meta name="description" content="Free online PDF tools to convert, merge, compress, split, and edit PDF files. Fast, secure, and no registration required.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f8f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo:before {
+    content: "📄";
+    font-size: 28px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    background: #ffffff;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* SEARCH */
+.search-box {
+    margin: -30px auto 40px;
+    max-width: 600px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23666" width="24" height="24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>') no-repeat 15px center;
+    background-size: 20px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* TOOLS GRID & CATEGORIES */
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #1e293b;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #2563eb;
+    border-radius: 2px;
+}
+
+/* Category Styling */
+.category {
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.category-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tool-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+}
+
+.tool-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.tool-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1e293b;
+    flex-grow: 1;
+}
+
+.tool-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #64748b;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.tool-card a {
+    text-decoration: none;
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s;
+    display: inline-block;
+    margin-top: auto;
+}
+
+.tool-card a:hover {
+    background: #1e40af;
+}
+
+/* WHY US */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.feature {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer {
+    background: #1e293b;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+/* TOOL COUNTER */
+.tool-counter {
+    background: #2563eb;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    nav a {
+        margin: 0;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .section h2 {
+        font-size: 24px;
+    }
+    
+    .tools {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    
+    .category-title {
+        font-size: 18px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media(max-width: 480px){
+    .tools {
+        grid-template-columns: 1fr;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PDF Tools</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">All Tools</a>
+        <a href="#">Features</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>All-in-One Free PDF Tools Online</h1>
+    <p>Access <strong>30+ professional tools</strong> to convert, merge, compress, split and edit PDF files easily. No registration required.</p>
+    <a class="btn" href="#convert">Convert PDF</a>
+    <a class="btn" href="#organize">Organize PDF</a>
+    <a class="btn" href="#secure">Secure PDF</a>
+</section>
+
+<div class="search-box">
+    <input type="text" placeholder="Search 30+ PDF tools...">
+</div>
+
+<section class="section">
+    <h2>All PDF Tools by Category</h2>
+    
+    <!-- PDF CONVERTER TOOLS -->
+    <div class="category" id="convert">
+        <div class="category-title">📄 PDF CONVERTER TOOLS <span class="tool-counter">10 tools</span></div>
+        <div class="tools">
+            <div class="tool-card">
+                <div class="tool-icon">📝</div>
+                <h3>PDF to Word</h3>
+                <p>Convert PDF files to editable Word documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📄</div>
+                <h3>Word to PDF</h3>
+                <p>Convert Word documents to PDF format</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🖼️</div>
+                <h3>PDF to JPG</h3>
+                <p>Convert PDF pages to JPG image files</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📸</div>
+                <h3>JPG to PDF</h3>
+                <p>Convert JPG images to PDF documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🖼️</div>
+                <h3>PDF to PNG</h3>
+                <p>Convert PDF to high-quality PNG images</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📷</div>
+                <h3>PNG to PDF</h3>
+                <p>Convert PNG images to PDF format</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📊</div>
+                <h3>PDF to Excel</h3>
+                <p>Extract tables from PDF to Excel spreadsheets</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📈</div>
+                <h3>Excel to PDF</h3>
+                <p>Convert Excel files to PDF documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📽️</div>
+                <h3>PDF to PowerPoint</h3>
+                <p>Convert PDF files to PowerPoint presentations</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🎯</div>
+                <h3>PowerPoint to PDF</h3>
+                <p>Convert PowerPoint slides to PDF format</p>
+                <a href="#">Use Tool</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PDF ORGANIZE TOOLS -->
+    <div class="category" id="organize">
+        <div class="category-title">🧩 PDF ORGANIZE TOOLS <span class="tool-counter">5 tools</span></div>
+        <div class="tools">
+            <div class="tool-card">
+                <div class="tool-icon">🔗</div>
+                <h3>Merge PDF</h3>
+                <p>Combine multiple PDF files into one document</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">✂️</div>
+                <h3>Split PDF</h3>
+                <p>Split PDF pages into separate files</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📉</div>
+                <h3>Compress PDF</h3>
+                <p>Reduce PDF file size without quality loss</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🔄</div>
+                <h3>Rotate PDF</h3>
+                <p>Rotate PDF pages to correct orientation</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🗑️</div>
+                <h3>Delete PDF Pages</h3>
+                <p>Remove unwanted pages from PDF documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PDF SECURITY TOOLS -->
+    <div class="category" id="secure">
+        <div class="category-title">🔐 PDF SECURITY TOOLS <span class="tool-counter">5 tools</span></div>
+        <div class="tools">
+            <div class="tool-card">
+                <div class="tool-icon">🔓</div>
+                <h3>Unlock PDF</h3>
+                <p>Remove password protection from PDF files</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🔒</div>
+                <h3>Protect PDF</h3>
+                <p>Add password protection to PDF documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">💧</div>
+                <h3>Watermark PDF</h3>
+                <p>Add text or image watermarks to PDF</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">✍️</div>
+                <h3>Sign PDF</h3>
+                <p>Add digital signatures to PDF documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🚫</div>
+                <h3>Redact PDF</h3>
+                <p>Permanently remove sensitive information</p>
+                <a href="#">Use Tool</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PDF EDIT & UTILITY TOOLS -->
+    <div class="category" id="edit">
+        <div class="category-title">🛠️ PDF EDIT & UTILITY TOOLS <span class="tool-counter">5 tools</span></div>
+        <div class="tools">
+            <div class="tool-card">
+                <div class="tool-icon">✏️</div>
+                <h3>Edit PDF</h3>
+                <p>Edit text and images in PDF files</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📃</div>
+                <h3>PDF to Text</h3>
+                <p>Extract text content from PDF documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📝</div>
+                <h3>Text to PDF</h3>
+                <p>Convert plain text to PDF format</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🔢</div>
+                <h3>Add Page Numbers</h3>
+                <p>Add page numbers to PDF documents</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">👁️</div>
+                <h3>OCR PDF</h3>
+                <p>Convert scanned PDFs to searchable text</p>
+                <a href="#">Use Tool</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ADVANCED PDF TOOLS -->
+    <div class="category" id="advanced">
+        <div class="category-title">⚙️ ADVANCED PDF TOOLS <span class="tool-counter">5 tools</span></div>
+        <div class="tools">
+            <div class="tool-card">
+                <div class="tool-icon">🔧</div>
+                <h3>Repair PDF</h3>
+                <p>Fix corrupted or damaged PDF files</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📄</div>
+                <h3>Flatten PDF</h3>
+                <p>Convert forms and annotations to static content</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">🌐</div>
+                <h3>PDF to HTML</h3>
+                <p>Convert PDF documents to HTML web pages</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">💻</div>
+                <h3>HTML to PDF</h3>
+                <p>Convert HTML web pages to PDF format</p>
+                <a href="#">Use Tool</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">📱</div>
+                <h3>Scan to PDF</h3>
+                <p>Convert scanned documents to PDF</p>
+                <a href="#">Use Tool</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why Choose Our PDF Tools?</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>⚡ Fast Processing</h3>
+            <p>Process your files in seconds with our optimized tools</p>
+        </div>
+        <div class="feature">
+            <h3>🔐 Secure & Private</h3>
+            <p>Your files are automatically deleted after processing</p>
+        </div>
+        <div class="feature">
+            <h3>🆓 100% Free</h3>
+            <p>No hidden costs, no watermarks, no registration</p>
+        </div>
+        <div class="feature">
+            <h3>📱 Mobile Friendly</h3>
+            <p>Works perfectly on all devices and browsers</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="logo" style="justify-content: center; color: white;">PDF Tools</div>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#convert">Convert Tools</a>
+            <a href="#organize">Organize Tools</a>
+            <a href="#secure">Security Tools</a>
+            <a href="#edit">Edit Tools</a>
+            <a href="#advanced">Advanced Tools</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+        <p class="copyright">© 2025 PDF Tools. All rights reserved. | 30+ Free PDF Tools Online</p>
+    </div>
+</footer>
+
+<script>
+// Simple search functionality
+document.querySelector('.search-box input').addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const toolCards = document.querySelectorAll('.tool-card');
+    
+    toolCards.forEach(card => {
+        const toolName = card.querySelector('h3').textContent.toLowerCase();
+        const toolDesc = card.querySelector('p').textContent.toLowerCase();
+        
+        if (toolName.includes(searchTerm) || toolDesc.includes(searchTerm)) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+
+// Smooth scroll for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if(targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Add tool count update
+document.addEventListener('DOMContentLoaded', function() {
+    const toolCards = document.querySelectorAll('.tool-card');
+    const searchInput = document.querySelector('.search-box input');
+    searchInput.placeholder = `Search ${toolCards.length}+ PDF tools...`;
+});
+</script>
+
+</body>
+</html>
